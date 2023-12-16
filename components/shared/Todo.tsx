@@ -3,7 +3,7 @@ import { todoType } from "@/types/todoTypes";
 import EditTodo from "./EditTodo";
 import DeleteTodo from "./DeleteTodo";
 
-const Todo = ({ todo }:  todoType) => {
+const Todo = ({ todo }:  {todo: todoType}) => {
   const todoStyle = {
     textDecoration: todo.isCompleted === true ? "line-through" : "none",
     opacity: todo.isCompleted === true ? "0.5" : "1"
